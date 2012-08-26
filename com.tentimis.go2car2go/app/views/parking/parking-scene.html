@@ -1,0 +1,29 @@
+<div id="bodypage">
+	<div class="header">
+		<div x-mojo-element="Button" id="map.button" class="mini-button" style="display:">Map</div>
+		<div id="page.title" class="info">parking</div>
+	</div>
+	<div class="header-spacer"></div>
+	
+	<div id="results.map" style="position:absolute; background-image:url(images/map-loading-bg.png); z-index:500;">
+		<div id="map_canvas" style=""></div>
+	</div>
+
+	<div style="z-index:100;">
+		<div id="search.results" class="search-results">
+			
+			<div id="search.results.none" class="search-results-none" style="display:none;">
+				<!-- Also displays error messages  -->
+			</div>
+			<div id="search.results.header" class="search-results-header" style="display:none;">
+				<!-- 1-10 of 24 Results for Pizza, Pensacola, FL 32504 -->
+			</div>
+
+			<div id="search.results.div"  style="display:none;">
+				<div class="palm-list whitebg">
+					<div id="search.results.list" x-mojo-element="FilterList"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

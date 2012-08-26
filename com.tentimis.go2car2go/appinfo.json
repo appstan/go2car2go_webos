@@ -1,0 +1,16 @@
+{
+	"id": "com.tentimis.go2car2go",
+        "version": "1.2.1",
+	"vendor": "Temirlan Tentimishov",
+	"type": "web",
+	"main": "index.html",
+	"title": "go2car2go",
+	"icon": "icon.png",
+    "universalSearch": {
+		"action": {
+		  "displayName": "go2car2go",
+		  "url": "com.tentimis.go2car2go"
+		  }
+	  },
+	"keywords": ["car2go","go2car2go","car","go","Car","Car2go", "CAR2GO"]
+}

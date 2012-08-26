@@ -1,0 +1,42 @@
+[
+    {"source": "app/assistants/stage-assistant.js"},
+    {
+        "scenes": "main",
+        "source": "app/assistants/main-assistant.js"
+    },
+    {
+        "scenes": "parking",
+        "source": "app/assistants/parking-assistant.js"
+    },
+    {
+        "scenes": "gasstations",
+        "source": "app/assistants/gasstations-assistant.js"
+    },
+    {
+        "scenes": "vehicles",
+        "source": "app/assistants/vehicles-assistant.js"
+    },
+    {
+        "scenes": "map",
+        "source": "app/assistants/map-assistant.js"
+    },
+    {"source": "app/assistants/no-wifi-assistant.js"},
+    {
+        "scenes": "bookings",
+        "source": "app/assistants/bookings-assistant.js"
+    },
+    {
+        "scenes": "preferences",
+        "source": "app/assistants/preferences-assistant.js"
+    },
+    {
+        "scenes": "login",
+        "source": "app/assistants/login-assistant.js"
+    },
+    {"source": "app/model/infobubble.js"},
+    {"source": "app/model/go2car2go.js"},
+    {"source": "app/model/OAuth.js"},
+    {"source": "app/model/sha1.js"},
+    {"source": "app/model/md5.js"}
+    
+]

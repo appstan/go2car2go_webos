@@ -1,0 +1,182 @@
+/* APP */
+#bodya{
+}
+.body-internal{
+	
+}
+.my-scene-fade-top{
+	position: fixed; top: 50; z-index: 100000;height: 54px; width: 100%; background: url(../images/my-scene-fade-top.png) top center repeat-x; -webkit-palm-mouse-target: ignore;
+}
+.my-scene-fade-bottom {
+	position: fixed; bottom: 0; z-index: 100000;height: 54px; width: 100%; background: url(../images/my-scene-fade-bottom.png) bottom center repeat-x; -webkit-palm-mouse-target: ignore;
+}
+
+
+/* TOP/BOTTOM BAR */
+.header{
+	background-image:url(../images/header-bg.png); width:100%; position:fixed; z-index:100; min-height:50px; z-index:9999; border-bottom:1px solid #1D4E1A;
+}
+.header .info{
+	color:#FFFFFF; font-weight:bold; font-size:18px; padding:12px 0px 0px 12px;
+}
+.header-spacer{
+	height:50px; clear:both;
+}
+.footer{
+	font-size:12px; padding:10px; letter-spacing:0.5px; margin-top:6px; margin-bottom:6px;
+}
+
+
+
+/* LISTS */
+.primary.palm-button.green {
+  -webkit-border-image: url(../images/palm/palm-button-green.png) 0 17 104 17 stretch stretch;
+}
+.primary.palm-button.green.selected {
+  -webkit-border-image: url(../images/palm/palm-button-green.png) 52 17 52 17 stretch stretch;
+}
+.primary.palm-button.green.disabled {
+  -webkit-border-image: url(../images/palm/palm-button-green.png) 104 17 0 17 stretch stretch;
+}
+.mini{
+	-webkit-transform: scale(0.8);
+}
+.mini-button{
+	float:right; width:100px; height:30px; font-size:14px; margin-top:-5px; padding-left:6px; padding-right:6px;
+}
+
+
+/* RESULTS */
+.search-results{
+}
+.search-results .palm-row{
+	padding: 8px;
+}
+.search-results-header .textual{
+	color:#646464; font-size:14px; font-weight:500; letter-spacing:1px; padding:10px;
+}
+.search-results-none{
+	padding:20px; color:#4C566C; font-size:18px; letter-spacing:1px;
+}
+.search-results .name{
+	color: #000000; font-weight:700; font-size:15px;
+}
+.search-results .address{
+ text-align: left;
+ color: #808080; font-size:15px;
+ margin-left: 4px;
+ font-weight: bold;
+ width: 220px;
+ overflow: hidden;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+}
+.search-results .addressb{
+	color: #808080; font-size:13px;
+}
+
+.search-results .distance{
+ float: right; font-size: 12px; background: #E8773E; padding: 4px; border-radius: 4px;
+ margin-right: 6px; font-weight: bold; max-width: 50px;  color: #fff;
+}
+
+
+/* RESULTS MAP */
+/*	pulse the 'I am here' location marker */
+@-webkit-keyframes pulse {
+	0% {
+		opacity: 1.0;
+		-webkit-transform: scale(1.05);
+	}
+	40% {
+		opacity: 0.25;
+		-webkit-transform: scale(0.85);
+	}
+	100% {
+		opacity: 1.0;
+		-webkit-transform: scale(1.05);
+	}
+}
+#map_canvas div[style*="blue_dot_circle.png"]:not([title]) {
+	-webkit-animation-name: pulse;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+}
+.map-hide-animation{
+	-webkit-transition: all 0.75s linear;
+	margin-left:800px;
+}
+.map-show-animation{
+	margin-left:0px;
+}
+.phoney {
+	/* webOS does not support gradients yet. Use this when it does. For now, we use an image. */
+	/* background: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgb(112,112,112)),color-stop(0.51, rgb(94,94,94)),color-stop(0.52, rgb(57,57,57)));*/
+	background-image:url(../images/map-bubble-bg.png); background-size: 100%;
+}
+.phoney-clicked {
+	/* webOS does not support gradients yet. Use this when it does. For now, we use an image. */
+	/* background: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgb(112,112,112)),color-stop(0.51, rgb(94,94,94)),color-stop(0.52, rgb(57,57,57)));*/
+	background-image:url(../images/map-bubble-bg-clicked.png); background-size: 100%;
+}
+.phoneytext {
+	text-shadow: 0 -1px 0 #000; color: #fff; font-family: Helvetica Neue, Helvetica, arial; font-size: 18px; padding: 4px 45px 4px 15px; font-weight: bold;
+	background: url(../images/map-bubble-arrow-blue.png) 95% 50% no-repeat;
+}
+.phoneytext2 {
+	text-shadow: 0 -1px 0 #000; color: #fff; font-family: Helvetica Neue, Helvetica, arial; font-size: 12px; font-weight: bold;
+}
+.phoneytab {
+	text-shadow: 0 -1px 0 #000; color: #fff; font-family: Helvetica Neue, Helvetica, arial;	font-size: 18px;
+	background: rgb(112,112,112) !important;
+}
+
+#splash-scene {
+
+}
+
+#splash-scene div#message {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 60px 0;
+}
+
+#splash-scene .splash-table{
+	width: 40%;
+	font-size: 14px;
+	font-weight: 100;
+	text-align: left;
+	padding: 0 50px 0 100px;
+}
+#splash-scene div#gps-message {
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px 60px 10px;    
+}
+
+#splash-scene div#spinner-container {
+    width: 100%;
+    text-align: center;
+    margin-left: 96px;
+}
+
+
+/* Command Menu Icons */
+
+.palm-menu-icon.menu-car {
+		background-image: url(../images/menu-icon-car.png);
+}
+
+.palm-menu-icon.menu-gas {
+		background-image: url(../images/menu-icon-gas.png);
+}
+
+.palm-menu-icon.menu-parking {
+		background-image: url(../images/menu-icon-parking.png);
+}
+
+.palm-menu-icon.menu-booking {
+		background-image: url(../images/menu-icon-booking.png);
+}
+
